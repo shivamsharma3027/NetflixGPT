@@ -7,6 +7,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BG_URL } from "../utils/constants";
 
 const Login = () => {
   const email = useRef(null);
@@ -88,7 +89,7 @@ const Login = () => {
       <Header />
       <div className="absolute ">
         <img 
-          src="https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg"
+          src={BG_URL}
           alt=""
         />
       </div>
